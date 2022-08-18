@@ -1,0 +1,5 @@
+public class Staticdemo {
+    static{
+        System.out.println("Hiren");
+    }
+}
