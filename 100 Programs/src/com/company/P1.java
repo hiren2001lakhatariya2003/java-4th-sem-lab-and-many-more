@@ -26,3 +26,5 @@ public class P1 {
         System.out.println("Sum of even number is :" + sum); //print answer
     }
 }
+
+

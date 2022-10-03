@@ -1,4 +1,4 @@
-//Program(3):~  WAP to find a Factor of a given number (iterative and recursive)
+//Program(3):~  WAP to find a Factor of a given number (iterative)
 
 package com.company;
 
