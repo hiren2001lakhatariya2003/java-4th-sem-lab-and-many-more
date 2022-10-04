@@ -1,15 +1,16 @@
 //Program(3):~  WAP to find a Factor of a given number (recursive)
 
-
 package com.company;
-
 import java.util.Scanner;
 
 class Factor{
-    public void find_factor(int a,int i) // function for find factors
+    public void find_factor(int n,int i) // function for find factors
     {
-        if(a%i==0)
-            System.out.print(i +", "); // for (last-1)
+        if(i<n) {
+            if (n % i == 0)
+                System.out.print(i+", ");
+            find_factor(n,i+1); // call method
+        }
 
     }
 }
@@ -17,14 +18,10 @@ public class P3_recursive {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number :");
-        int number = sc.nextInt(); // input number from user
-        Factor fc = new Factor(); // create object
-        for (int i=1;i<number;i++)
-        {
-           fc.find_factor(number,i); // call method of class Factor
-        }
-        System.out.println(number); // print last number
+        int number = sc.nextInt(); //user input
+
+        Factor f = new Factor(); // make object
+        f.find_factor(number,1);
+        System.out.println(number);
     }
 }
-
-
