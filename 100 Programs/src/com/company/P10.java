@@ -14,18 +14,15 @@ public class P10 {
         for (int i=first;i<=last;i++)
         {
             flag=0;
-            for (int j=2;j<i;j++)
-            {
-                if(i%j==0)
-                {
+            for (int j=2;j<i;j++) {
+                if(i%j==0) {
                     flag=1;
                     break;
                 }
                 else
                     flag=0;
             }
-            if(flag==0)
-            {
+            if(flag==0) {
                 System.out.print(i+" ");
             }
         }
