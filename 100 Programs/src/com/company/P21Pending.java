@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class P17 {
+public class P21Pending {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -19,20 +19,9 @@ public class P17 {
 
         for(int i=0;i<size;i++)
         {
-            int x=array[i];
-            int j=i-1;
-            while (j>=0 && x<array[j])
-            {
-                array[j+1]=array[j];
-                j=j-1;
-            }
-            array[j+1]=x;
-        }
 
-        for(int i=0;i<size;i++)
-        {
-            System.out.print(array[i]+" ");
         }
-        
     }
 }
+
+
