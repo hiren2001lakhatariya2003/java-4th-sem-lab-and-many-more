@@ -1,3 +1,4 @@
+//Program(23):~ WAP to enter an element at specific position into array. (Do not take a new array)
 package com.company;
 
 import java.util.Scanner;
@@ -22,20 +23,28 @@ public class P23 {
         int position = sc.nextInt();
         System.out.print("Value : ");
         int value = sc.nextInt();
-        int temp = array[position];
+        array[size]=0; //last digit =0
 
-        for (int i=0;i<size+1;i++) {
-                if (i > position + 1) {
-                    array[i + 1] = array[i];
+        System.out.print("Old array : ");
+        for(int i=0;i<size;i++) {
+            System.out.print(array[i] + " ");
+        }
+        for(int i=size;i>=position;i--)
+        {
+            if(i>0)
+            {
+                array[i]=array[i-1]; //change the value from last to given position by shift the value of i-1 to i
+                if(i==position)
+                {
+                    array[i]=value; // when we went to given position the change the value of existing entered value to new value at given position
                 }
-                if (i == position + 1) {
-                    array[i] = temp;
-                }
-                if (position == i) {
-                    array[i] = value;
-                }
-
             }
+            else
+            {
+                array[0]=value; // if user enter at 1st position then add new value at 1st position and shift all value with 1 position.
+            }
+        }
+        System.out.print("\nNew array : ");
         for(int i=0;i<size+1;i++) {
             System.out.print(array[i]+" ");
     }
