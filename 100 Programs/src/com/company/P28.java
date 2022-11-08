@@ -23,7 +23,7 @@ public class P28 {
 
         for(int i=0;i<size;i++)
         {
-            for(int j=i)
+           // for(int j=i)
         }
     }
 }

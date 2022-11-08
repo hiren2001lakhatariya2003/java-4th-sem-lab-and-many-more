@@ -1,3 +1,4 @@
+// Program(10):~ WAP to find a prime number between range (range should be entered by user).
 package com.company;
 
 import java.util.Scanner;

@@ -1,3 +1,5 @@
+// Program(14):~ WAP to calculate an angle between hour and minute hand. (Hours and minutes should be
+//taken from user).
 package com.company;
 
 import java.util.Scanner;
@@ -10,7 +12,7 @@ public class P14 {
 
         System.out.println("Minute : ");
         int minute  = sc.nextInt();
-        double answer=0;
+        double answer;
 
         if(hour == 12) hour = 0;
         if(minute == 60) minute = 0;

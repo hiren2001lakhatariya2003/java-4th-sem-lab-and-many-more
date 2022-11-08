@@ -18,10 +18,10 @@ public class P15 {
             while (digit!=0)
             {
                 int rem = digit%2;
-                array[index]=rem;
+                array[index++]=rem;
                 digit=digit/2;
                 count++;
-                index++;
+
 
             }
             while(count!=4)

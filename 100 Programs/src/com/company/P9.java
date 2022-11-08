@@ -1,3 +1,4 @@
+// Program(9):~ WAP to find whether a number is Odd or Even without using a % operator.
 package com.company;
 
 import java.util.Scanner;

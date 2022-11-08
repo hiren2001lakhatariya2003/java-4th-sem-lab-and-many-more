@@ -15,7 +15,7 @@ public class P7_iterative {
             System.out.println("0 1");
         else {
             System.out.print("0 1 ");
-            for (int i = 2; i <= number; i++) {
+            for (int i = 2; i < number; i++) {
                 int c = first + second;
                 System.out.print(c + " ");
                 first = second;
